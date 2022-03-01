@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="AYFa-rB8117ba7wMYsGa" name="Page-1">
+        <mxGraphModel dx="1036" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="33" value="高等代数的研究对象" style="swimlane;labelBackgroundColor=none;sketch=0;fontSize=20;fontColor=#000000;strokeWidth=1;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="30" width="750" height="400" as="geometry">
+                        <mxRectangle x="20" y="30" width="210" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="group" vertex="1" connectable="0" parent="33">
+                    <mxGeometry x="20" y="40" width="680" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="n 元线性方程组" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="34">
+                    <mxGeometry x="250" y="10" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="n 维向量空间" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="34">
+                    <mxGeometry x="250" y="80" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="34" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="220" y="35"/>
+                            <mxPoint x="220" y="105"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="线性空间" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="34">
+                    <mxGeometry x="247.5" y="160" width="165" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="34" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="矩阵" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="34">
+                    <mxGeometry x="480" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="34" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="线性映射" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="34">
+                    <mxGeometry x="480" y="162.5" width="120" height="47.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="34" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;" edge="1" parent="34" source="5" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="双线性函数&lt;br&gt;向量点乘" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="34">
+                    <mxGeometry x="70" y="160" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="34" source="4" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="具有度量的线性空间&lt;br&gt;欧几里德空间，酉空间，..." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="34">
+                    <mxGeometry x="90" y="260" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="34" source="4" target="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="34" source="8" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="与度量有关的线性变换&lt;br&gt;正交变换，对称变换，酉变换" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="34">
+                    <mxGeometry x="400" y="260" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;" edge="1" parent="34" source="6" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=none;startFill=0;" edge="1" parent="34" source="10" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="线性代数" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=20;strokeWidth=1;fontColor=#FF3333;labelBackgroundColor=default;gradientColor=none;sketch=0;align=left;horizontal=1;" vertex="1" parent="34">
+                    <mxGeometry width="20" height="340" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
