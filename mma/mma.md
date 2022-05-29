@@ -13,8 +13,10 @@
 - 清除所有变量：`ClearAll["Global`*"]`。
   - 麻烦的语法。稍微解释下。ClearAll包含两套功能: `Clear` + `ClearAttributes`。
 - 其他相关的命令
-  - 查看符号定义：`?x`
+  - 查看符号定义的信息：`?x`
   - 删掉变量: `Remove`。比如`Remove[x];?x`，会输出`Missing["UnknownSymbol", "x"]`
+  - 查看所有的全局变量：`Names["Global`*"]`。
+    - 特殊的：```Names["Global`*"];Names["Global`*"]```输出`{}`
 
 ## Wolfram Documentation Center 
 - tutorial/Expressions
