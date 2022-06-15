@@ -34,3 +34,22 @@ a[n_] := a[n] = a[n - 1] + a[n - 2];(* 斐波拉契数列 *)
 b[n_] := a[n]/a[n + 1] ~N~10;(* b逼近黄金比例 *)
 ```
 这儿`a[n_]`的定义里一定要加上`a[n]=`，不然速度非常慢，加上后相当于记住里中间的结果。
+
+## Block vs Moudle vs With
+> https://mathematica.stackexchange.com/questions/559/what-are-the-use-cases-for-different-scoping-constructs
+
+```mma
+x = "global"; f[] := x;
+Module[{x = "local"}, {x, f[], Hold[x]}]
+Block[{x = "local"}, {x, f[], Hold[x]}]
+With[{x = "local"}, {x, f[], Hold[x]}]
+
+(* 输出 *)
+{"local", "global", Hold[x$123]}        (* Module *)
+{"local", "local",  Hold[x]}            (* Block *)
+{"local", "global", Hold["local"]}      (* With *)
+```
+简单理解
+- Module: 新建局部变量。【可以用来做闭包哟！】
+- Block: 给符号赋予局部值，退出时，还会恢复。
+- With: 直接做模式替换。有点像新建常量。
